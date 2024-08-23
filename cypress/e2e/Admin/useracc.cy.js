@@ -20,12 +20,12 @@ describe('User Tests', () => {
         cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Orgtest123')
         cy.get('.oxd-button--secondary').click()
 
-        cy.wait(3000)
+        cy.wait(5000)
         cy.url().should('include', 'https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers')
+        //add comment
         
         
-        
-    });
+    })
 
     /*it('should delete an existing user', () => {
         cy.get('#menu_admin_viewAdminModule').click();
